@@ -27,8 +27,8 @@ try {
   console.log(`Data saved to jateDB ${res}`)
 } catch (error) {
   console.log(error)
-}
-}
+};
+};
 // gets all the content from the database
 export const getDb = async () => {
 
