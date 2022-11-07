@@ -1,5 +1,8 @@
 # Just Another Text Editor -J.A.T.E
+
 Link to the Project Repository: [REPO](https://github.com/moyuh/text-editor)
+
+Link to deployed project: [APP](https://j-ate-just-another-text-editor.herokuapp.com/)
 
 <img src="./assets/photos/screenshot.png">
 
