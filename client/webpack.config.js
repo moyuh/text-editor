@@ -40,7 +40,7 @@ module.exports = () => {
         icons: [{
           src: path.resolve('src/images/logo.png'),
           sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join('asset', 'icons'),
+          destination: path.join('assets', 'icons'),
         }],
       }),
     ],
@@ -59,9 +59,16 @@ module.exports = () => {
             options: {
               presets: ['@babel/preset-env'],
               plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime']
-            }
-          }
-        }
+            },
+          },
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+          type: 'asset/resource',
+          generator: {
+            filename: 'images/[name][ext]',
+          },
+      },
       ],
     },
   };
